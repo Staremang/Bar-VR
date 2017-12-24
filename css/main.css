@@ -607,14 +607,14 @@ template {
   float: right;
   width: 55px;
   height: 110px;
-  background: url(/img/arr-right-r.png);
+  background: url(../img/arr-right-r.png);
   margin-right: 119px;
 }
 .owl-theme .owl-nav .owl-prev {
   float: left;
   width: 55px;
   height: 110px;
-  background: url(/img/arr-left-r.png);
+  background: url(../img/arr-left-r.png);
   margin-left: 119px;
 }
 .owl-theme .owl-dots {
