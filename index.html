@@ -9,6 +9,7 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	
     <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 </head>
 <body>
 <!--
@@ -269,11 +270,11 @@
 					<a data-tab="4" href="#" class="section-game-list__category-link">гонки</a>
 					<a data-tab="5" href="#" class="section-game-list__category-link">детские</a>
 					<a data-tab="6" href="#" class="section-game-list__category-link">квесты</a>
-					<a data-tab="7" href="#" class="section-game-list__category-link">многопользовательские</a>
+					<a data-tab="7" href="#" class="section-game-list__category-link section-game-list__category-link_long">многопользовательские</a>
 					<a data-tab="8" href="#" class="section-game-list__category-link">шутеры</a>
 					<a data-tab="9" href="#" class="section-game-list__category-link">симуляторы</a>
 				</nav>
-				<div class="section-game-list__list">
+				<div class="section-game-list__list" data-simplebar>
 					<div class="section-game-list__tab active" data-tab="1">
 						<div class="section-game-list__item">
 							<img src="img/game-1.jpg" alt="" class="section-game-list__img">
@@ -281,7 +282,7 @@
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -295,7 +296,7 @@
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
 							
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -308,7 +309,7 @@
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -321,7 +322,7 @@
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -335,7 +336,7 @@
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
 							
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -348,7 +349,7 @@
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -358,12 +359,39 @@
 					</div>
 					<div class="section-game-list__tab" data-tab="2">
 						<div class="section-game-list__item">
+							<img src="img/game-2.jpg" alt="" class="section-game-list__img">
+							<div class="section-game-list__description">
+								<div class="section-game-list__name">arizona Sunshine</div>
+								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
+
+							
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
+									<img src="img/i-play-g.svg" alt="">
+									<span>Смотреть видео</span>
+								</a>
+								
+							</div>
+						</div>
+						<div class="section-game-list__item">
+							<img src="img/game-3.jpg" alt="" class="section-game-list__img">
+							<div class="section-game-list__description">
+								<div class="section-game-list__name">arizona Sunshine</div>
+								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
+
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
+									<img src="img/i-play-g.svg" alt="">
+									<span>Смотреть видео</span>
+								</a>
+								
+							</div>
+						</div>
+						<div class="section-game-list__item">
 							<img src="img/game-1.jpg" alt="" class="section-game-list__img">
 							<div class="section-game-list__description">
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -377,7 +405,7 @@
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
 							
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -390,47 +418,7 @@
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
-									<img src="img/i-play-g.svg" alt="">
-									<span>Смотреть видео</span>
-								</a>
-								
-							</div>
-						</div>
-						<div class="section-game-list__item">
-							<img src="img/game-1.jpg" alt="" class="section-game-list__img">
-							<div class="section-game-list__description">
-								<div class="section-game-list__name">arizona Sunshine</div>
-								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
-
-								<a href="#" class="section-game-list__btn btn btn_white-2">
-									<img src="img/i-play-g.svg" alt="">
-									<span>Смотреть видео</span>
-								</a>
-								
-							</div>
-						</div>
-						<div class="section-game-list__item">
-							<img src="img/game-2.jpg" alt="" class="section-game-list__img">
-							<div class="section-game-list__description">
-								<div class="section-game-list__name">arizona Sunshine</div>
-								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
-
-							
-								<a href="#" class="section-game-list__btn btn btn_white-2">
-									<img src="img/i-play-g.svg" alt="">
-									<span>Смотреть видео</span>
-								</a>
-								
-							</div>
-						</div>
-						<div class="section-game-list__item">
-							<img src="img/game-3.jpg" alt="" class="section-game-list__img">
-							<div class="section-game-list__description">
-								<div class="section-game-list__name">arizona Sunshine</div>
-								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
-
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -440,12 +428,38 @@
 					</div>
 					<div class="section-game-list__tab" data-tab="3">
 						<div class="section-game-list__item">
+							<img src="img/game-3.jpg" alt="" class="section-game-list__img">
+							<div class="section-game-list__description">
+								<div class="section-game-list__name">arizona Sunshine</div>
+								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
+
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
+									<img src="img/i-play-g.svg" alt="">
+									<span>Смотреть видео</span>
+								</a>
+								
+							</div>
+						</div>
+						<div class="section-game-list__item">
 							<img src="img/game-1.jpg" alt="" class="section-game-list__img">
 							<div class="section-game-list__description">
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
+									<img src="img/i-play-g.svg" alt="">
+									<span>Смотреть видео</span>
+								</a>
+								
+							</div>
+						</div>
+						<div class="section-game-list__item">
+							<img src="img/game-1.jpg" alt="" class="section-game-list__img">
+							<div class="section-game-list__description">
+								<div class="section-game-list__name">arizona Sunshine</div>
+								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
+
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -459,33 +473,7 @@
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
 							
-								<a href="#" class="section-game-list__btn btn btn_white-2">
-									<img src="img/i-play-g.svg" alt="">
-									<span>Смотреть видео</span>
-								</a>
-								
-							</div>
-						</div>
-						<div class="section-game-list__item">
-							<img src="img/game-3.jpg" alt="" class="section-game-list__img">
-							<div class="section-game-list__description">
-								<div class="section-game-list__name">arizona Sunshine</div>
-								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
-
-								<a href="#" class="section-game-list__btn btn btn_white-2">
-									<img src="img/i-play-g.svg" alt="">
-									<span>Смотреть видео</span>
-								</a>
-								
-							</div>
-						</div>
-						<div class="section-game-list__item">
-							<img src="img/game-1.jpg" alt="" class="section-game-list__img">
-							<div class="section-game-list__description">
-								<div class="section-game-list__name">arizona Sunshine</div>
-								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
-
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -499,7 +487,7 @@
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
 							
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -512,7 +500,7 @@
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -527,7 +515,7 @@
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -541,7 +529,7 @@
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
 							
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -554,7 +542,7 @@
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -567,7 +555,7 @@
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -581,7 +569,7 @@
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
 							
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -594,7 +582,7 @@
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -604,12 +592,39 @@
 					</div>
 					<div class="section-game-list__tab" data-tab="5">
 						<div class="section-game-list__item">
+							<img src="img/game-2.jpg" alt="" class="section-game-list__img">
+							<div class="section-game-list__description">
+								<div class="section-game-list__name">arizona Sunshine</div>
+								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
+
+							
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
+									<img src="img/i-play-g.svg" alt="">
+									<span>Смотреть видео</span>
+								</a>
+								
+							</div>
+						</div>
+						<div class="section-game-list__item">
+							<img src="img/game-3.jpg" alt="" class="section-game-list__img">
+							<div class="section-game-list__description">
+								<div class="section-game-list__name">arizona Sunshine</div>
+								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
+
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
+									<img src="img/i-play-g.svg" alt="">
+									<span>Смотреть видео</span>
+								</a>
+								
+							</div>
+						</div>
+						<div class="section-game-list__item">
 							<img src="img/game-1.jpg" alt="" class="section-game-list__img">
 							<div class="section-game-list__description">
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -623,7 +638,7 @@
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
 							
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -636,47 +651,7 @@
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
-									<img src="img/i-play-g.svg" alt="">
-									<span>Смотреть видео</span>
-								</a>
-								
-							</div>
-						</div>
-						<div class="section-game-list__item">
-							<img src="img/game-1.jpg" alt="" class="section-game-list__img">
-							<div class="section-game-list__description">
-								<div class="section-game-list__name">arizona Sunshine</div>
-								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
-
-								<a href="#" class="section-game-list__btn btn btn_white-2">
-									<img src="img/i-play-g.svg" alt="">
-									<span>Смотреть видео</span>
-								</a>
-								
-							</div>
-						</div>
-						<div class="section-game-list__item">
-							<img src="img/game-2.jpg" alt="" class="section-game-list__img">
-							<div class="section-game-list__description">
-								<div class="section-game-list__name">arizona Sunshine</div>
-								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
-
-							
-								<a href="#" class="section-game-list__btn btn btn_white-2">
-									<img src="img/i-play-g.svg" alt="">
-									<span>Смотреть видео</span>
-								</a>
-								
-							</div>
-						</div>
-						<div class="section-game-list__item">
-							<img src="img/game-3.jpg" alt="" class="section-game-list__img">
-							<div class="section-game-list__description">
-								<div class="section-game-list__name">arizona Sunshine</div>
-								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
-
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -691,7 +666,7 @@
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -705,7 +680,7 @@
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
 							
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -718,7 +693,7 @@
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -731,7 +706,7 @@
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -745,7 +720,7 @@
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
 							
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -758,7 +733,7 @@
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -773,21 +748,7 @@
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
-									<img src="img/i-play-g.svg" alt="">
-									<span>Смотреть видео</span>
-								</a>
-								
-							</div>
-						</div>
-						<div class="section-game-list__item">
-							<img src="img/game-2.jpg" alt="" class="section-game-list__img">
-							<div class="section-game-list__description">
-								<div class="section-game-list__name">arizona Sunshine</div>
-								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
-
-							
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -800,7 +761,7 @@
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -813,7 +774,7 @@
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -827,7 +788,7 @@
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
 							
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -840,7 +801,7 @@
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -850,12 +811,25 @@
 					</div>
 					<div class="section-game-list__tab" data-tab="8">
 						<div class="section-game-list__item">
+							<img src="img/game-3.jpg" alt="" class="section-game-list__img">
+							<div class="section-game-list__description">
+								<div class="section-game-list__name">arizona Sunshine</div>
+								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
+
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
+									<img src="img/i-play-g.svg" alt="">
+									<span>Смотреть видео</span>
+								</a>
+								
+							</div>
+						</div>
+						<div class="section-game-list__item">
 							<img src="img/game-1.jpg" alt="" class="section-game-list__img">
 							<div class="section-game-list__description">
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -869,7 +843,7 @@
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
 							
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -882,47 +856,7 @@
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
-									<img src="img/i-play-g.svg" alt="">
-									<span>Смотреть видео</span>
-								</a>
-								
-							</div>
-						</div>
-						<div class="section-game-list__item">
-							<img src="img/game-1.jpg" alt="" class="section-game-list__img">
-							<div class="section-game-list__description">
-								<div class="section-game-list__name">arizona Sunshine</div>
-								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
-
-								<a href="#" class="section-game-list__btn btn btn_white-2">
-									<img src="img/i-play-g.svg" alt="">
-									<span>Смотреть видео</span>
-								</a>
-								
-							</div>
-						</div>
-						<div class="section-game-list__item">
-							<img src="img/game-2.jpg" alt="" class="section-game-list__img">
-							<div class="section-game-list__description">
-								<div class="section-game-list__name">arizona Sunshine</div>
-								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
-
-							
-								<a href="#" class="section-game-list__btn btn btn_white-2">
-									<img src="img/i-play-g.svg" alt="">
-									<span>Смотреть видео</span>
-								</a>
-								
-							</div>
-						</div>
-						<div class="section-game-list__item">
-							<img src="img/game-3.jpg" alt="" class="section-game-list__img">
-							<div class="section-game-list__description">
-								<div class="section-game-list__name">arizona Sunshine</div>
-								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
-
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -937,7 +871,7 @@
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -951,7 +885,7 @@
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
 							
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -964,7 +898,7 @@
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -977,7 +911,7 @@
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -991,7 +925,7 @@
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
 							
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -1004,7 +938,7 @@
 								<div class="section-game-list__name">arizona Sunshine</div>
 								<div class="section-game-list__text">Arizona Sunshine –это классический зомби-апокалипсис, который разворачивается в пустынном пейзаже Аризоны. Цель игрока выжить и покинуть адское место, куда его занесла нелегкая.</div>
 
-								<a href="#" class="section-game-list__btn btn btn_white-2">
+								<a data-fancybox href="https://www.youtube-nocookie.com/embed/vr0qNXmkUJ8?showinfo=0" class="section-game-list__btn btn btn_white-2">
 									<img src="img/i-play-g.svg" alt="">
 									<span>Смотреть видео</span>
 								</a>
@@ -1069,6 +1003,8 @@
 	</footer>
 	<script src="js/jquery-3.2.0.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/simplebar.min.js"></script>
 	<script src="js/main.min.js"></script>
 </body>
 </html>

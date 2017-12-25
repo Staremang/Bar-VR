@@ -14,7 +14,7 @@ body {
 	font-family: "Proxima Nova", sans-serif;
 	font-size: 14px;
 	background: white;
-	color: #b9b9b9;
+//	color: #b9b9b9;
 	
 //	background: url(/img/rm/bg.jpg) top center;
 }
@@ -800,39 +800,51 @@ body {
 	&__category {
 		border-right: 1px solid #e0e0e0;
 		min-width: 355px;
-		a {
-			margin-bottom: 29px;
-			font-family: "BravoRG", sans-serif;
-			display: block;
-			text-transform: uppercase;
-			text-decoration: none;
-			color: #191919;
-			font-size: 36px;
+	}
+	
+	&__category-link {
+		margin-bottom: 29px;
+		font-family: "BravoRG", sans-serif;
+		display: block;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #191919;
+		font-size: 36px;
 //			line-height: 70px;
-			position: relative;
-			transition: color .3s;
-			letter-spacing: 3.6px;
-			&:first-child {
-				margin-top: -7px;
-			}
-			&:last-child {
-				margin-bottom: -7px;
-			}
+		position: relative;
+		transition: color .3s;
+		letter-spacing: 3.6px;
+		&:first-child {
+			margin-top: -7px;
+		}
+		&:last-child {
+			margin-bottom: -7px;
+		}
+		&:before {
+			content: '';
+			background: url(../img/blot.png) no-repeat;
+			background-size: 347px 138px;
+			height: 138px;
+			width: 0;
+			position: absolute;
+			transition: width .3s ease;
+			top: -55px;
+			left: -119px;
+			z-index: -1;
+		}
+		&.active {
+			color: white;
 			&:before {
-				content: '';
-				background: url(../img/blot.png);
-				height: 138px;
-				width: 0;
-				position: absolute;
-				transition: width .3s ease;
-				top: -55px;
-				left: -119px;
-				z-index: -1;
+				width: 347px;
 			}
+		}
+		
+		
+		&_long {
 			&.active {
-				color: white;
 				&:before {
-					width: 347px;
+					background-size: 460px 138px;
+					width: 460px;
 				}
 			}
 		}
