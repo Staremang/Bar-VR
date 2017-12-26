@@ -139,6 +139,16 @@ if (typeof(jQuery) !== "undefined") {
 
 		})
 		
+//		var totalPrice = 0;
+		$('.reservation__item').click(function () {
+			$(this).toggleClass('active');
+			var total = 0;
+			$('.reservation__item.active').each(function () {
+				total += +$(this).attr('data-price');
+			})
+			$('.reservation__total-num').html(total.toString() + ' Р');
+		})
+		
 		
 		$('a[data-anchor]').anchor({
 			transitionDuration : 1000
