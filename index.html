@@ -30,14 +30,10 @@
 		<nav class="menu">
 			<div class="menu__bg"></div>
 			<div class="menu__container">
-				<a href="#" class="menu__link">О нас</a>
-				<a href="#" class="menu__link">Игры</a>
-				<a href="#" class="menu__link">Цены</a>
-				<a href="#" class="menu__link">Для детей</a>
-				<a href="#" class="menu__link">Обучение</a>
-				<a href="#" class="menu__link">Мероприятия</a>
-				<a href="#" class="menu__link">Отзывы</a>
-				<a href="#" class="menu__link">Контакты</a>
+				<a href="#about" data-anchor class="menu__link">О нас</a>
+				<a href="#reservation" data-anchor class="menu__link">Забронировать</a>
+				<a href="#games" data-anchor class="menu__link">Игры</a>
+				<a href="#reviews" data-anchor class="menu__link">Отзывы</a>
 			</div>
 		</nav>
 		<button class="section-hero__menu-btn nav-menu-btn">
@@ -49,6 +45,8 @@
 			</span>
 			<spaa class="nav-menu-btn__text">Открыть меню</spaa>
 		</button>
+		
+		<div class="section-hero__address hero-address">Красный проспект (161)</div>
 		
 		<a href="#" class="section-hero__tel-btn hero-tel-link">
 			<span class="hero-tel-link__order">Заказать звонок</span>
@@ -259,7 +257,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="section-game-list">
+	<div class="section-game-list" id="games">
 		<div class="container container-l">
 			<h1 class="section-game-list__title section-title">игры, в которые вы можете погрузиться</h1>
 			<div class="section-game-list__container">
@@ -953,7 +951,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="section-reviews">
+	<div class="section-reviews" id="reviews">
 		<div class="container">
 			<div class="section-reviews__title section-title">Отзывы клиентов</div>
 			<div class="section-reviews-slider">
@@ -982,18 +980,12 @@
 			</div>
 			<div class="footer__nav">
 				<div class="footer__">
-					<a href="" class="footer__link">О нас</a>
-					<a href="" class="footer__link">Игры</a>
-					<a href="" class="footer__link">Цены</a>
+					<a href="#about" data-anchor class="footer__link">О нас</a>
+					<a href="#reservation" data-anchor class="footer__link">Забронировать</a>
 				</div>
 				<div class="footer__">
-					<a href="" class="footer__link">Для детей</a>
-					<a href="" class="footer__link">Обучение</a>
-					<a href="" class="footer__link">Мероприятия</a>
-				</div>
-				<div class="footer__">
-					<a href="" class="footer__link">Отзывы</a>
-					<a href="" class="footer__link">Контакты</a>
+					<a href="#games" data-anchor class="footer__link">Игры</a>
+					<a href="#reviews" data-anchor class="footer__link">Отзывы</a>
 				</div>
 			</div>
 			<div class="footer__btn-block">

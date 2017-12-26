@@ -2550,10 +2550,10 @@ body {
   font-size: 18px;
   font-family: "BravoRG", sans-serif;
   color: #b9b9b9;
-  cursor: pointer;
   letter-spacing: 1.8px;
   text-decoration: none;
   z-index: 10;
+  cursor: pointer;
 }
 .hero-tel-link__order {
   opacity: 0;
@@ -2629,6 +2629,16 @@ body {
 }
 .hero-social-list__yt:hover {
   background-image: url(../img/i-logo-yt-r.png);
+}
+.hero-address {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "BravoRG", sans-serif;
+  color: #b9b9b9;
+  letter-spacing: 1.8px;
+  text-decoration: none;
+  z-index: 10;
+  display: inline-block;
 }
 .page-nav {
   z-index: 10;
@@ -2753,6 +2763,10 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+.section-hero__address {
+  position: absolute;
+  top: 68px;
 }
 .section-hero__menu-btn {
   top: 68px;
@@ -3376,7 +3390,7 @@ body {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  max-width: 100%;
+  max-width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
