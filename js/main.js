@@ -159,12 +159,17 @@ if (typeof(jQuery) !== "undefined") {
 			$('.section-reviews-slider').addClass('owl-carousel owl-carousel_no-dots owl-theme');
 			$('.section-reviews-slider').owlCarousel({
 				loop: true,
-				nav: true,
+				nav: false,
 				navText: [ '', '' ],
 				items: 1,
 //				autoWidth:true, 
 //				center:true,
-			})
+				responsive : {
+					768 : {
+						nav: true
+					}
+				}
+				})
 			
 			
 		}
