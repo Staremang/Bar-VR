@@ -2358,6 +2358,9 @@ body {
   font-size: 14px;
   background: white;
 }
+.small {
+  font-size: 75%;
+}
 .btn {
   text-align: center;
   cursor: pointer;
