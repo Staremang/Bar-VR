@@ -2359,6 +2359,7 @@ body {
   background: white;
 }
 .btn {
+  text-align: center;
   cursor: pointer;
   border-radius: 0;
   border: 0;
@@ -2815,6 +2816,18 @@ body {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+.section-hero__video-overlay {
+  margin: auto;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: .5;
 }
 .section-hero__menu-btn {
   top: 20px;
