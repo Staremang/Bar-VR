@@ -197,22 +197,29 @@ body {
 //	justify-content: center;
 	padding: 100px 0;
 	z-index: 100;
-	overflow: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
 	display: none;
 }
 .popup-wrapper {
 	
     left: 50%;
-    margin-left: -225px;
+    margin-left: -160px;
 	
 	
 	background: #f1e9cd;
 //	background-image: url(/img/rm/pp.png);
 //	background-position:  center top;
-	max-width: 450px;
+	max-width: 320px;
 	text-align: center;
-	padding: 55px 84px 160px;
+	padding: 55px 44px 160px;
 	position: relative;
+	
+	@media (min-width: @width-md) {
+		max-width: 450px;
+		margin-left: -225px;
+		padding: 55px 84px 160px;
+	}
 	&__title {
 		
 		letter-spacing: 2px;
@@ -248,6 +255,8 @@ body {
 	&__btn {
 		display: block;
 		margin-top: 68px;
+		min-width: 0;
+		width: 100%;
 	}
 	&__img-0 {
 		position: absolute;

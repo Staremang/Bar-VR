@@ -3995,17 +3995,25 @@ body {
   bottom: 0;
   padding: 100px 0;
   z-index: 100;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   display: none;
 }
 .popup-wrapper {
   left: 50%;
-  margin-left: -225px;
+  margin-left: -160px;
   background: #f1e9cd;
-  max-width: 450px;
+  max-width: 320px;
   text-align: center;
-  padding: 55px 84px 160px;
+  padding: 55px 44px 160px;
   position: relative;
+}
+@media (min-width: 768px) {
+  .popup-wrapper {
+    max-width: 450px;
+    margin-left: -225px;
+    padding: 55px 84px 160px;
+  }
 }
 .popup-wrapper__title {
   letter-spacing: 2px;
@@ -4041,6 +4049,8 @@ body {
 .popup-wrapper__btn {
   display: block;
   margin-top: 68px;
+  min-width: 0;
+  width: 100%;
 }
 .popup-wrapper__img-0 {
   position: absolute;
