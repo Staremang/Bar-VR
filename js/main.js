@@ -114,6 +114,11 @@
 
 if (typeof(jQuery) !== "undefined") {
 	$(document).ready(function () {
+		$('#date').dateDropper();
+		$('#time').timeDropper({
+			format: 'HH:00',
+			setCurrentTime: false
+		});
 
 		$('.nav-menu-btn').click(function() {
 			if ($(this).hasClass('open')) {

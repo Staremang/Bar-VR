@@ -22,6 +22,9 @@ body {
 .small {
 	font-size: 75%;
 }
+.red {
+	color: #c90834;
+}
 .btn {
 	text-align: center;
 	cursor: pointer;
@@ -139,6 +142,172 @@ body {
 //			color: #191919;
 			box-shadow: 0 0 0 1px #da294f;
 		}
+	}
+}
+.input-group {
+	display: flex;
+	margin-bottom: 23px;
+	padding: 7px 0;
+	border-bottom: 1px solid #b9b9b9;
+	.input:nth-child(2) {
+		border-left: 1px solid #b9b9b9;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 7px;
+			bottom: 7px;
+			width: 1px;
+			background: #b9b9b9;
+		}
+	}
+}
+.input {
+	display: block;
+	background: none;
+	border: 0;
+//	border-top: 0;
+//	border-left: 0;
+//	border-right: 0;
+//	border-bottom: 1px solid #b9b9b9;
+	outline: 0;
+		font-family: "BravoRG", sans-serif;
+	font-size: 22px;
+	text-transform: uppercase;
+	color: #1d1d1d;
+	text-align: center;
+	width: 100%;
+	padding: 3px;
+	position: relative;
+    letter-spacing: 1.3px;
+	&::-webkit-input-placeholder {color: #1d1d1d;}
+	&::-moz-placeholder          {color: #1d1d1d;}
+	&:-moz-placeholder           {color: #1d1d1d;}
+	&:-ms-input-placeholder      {color: #1d1d1d;}
+}
+
+.popup {
+	position: absolute;
+	background: rgba(36, 36, 36, 0.96);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+//	display: flex;
+//	align-items: center;
+//	justify-content: center;
+	padding: 100px 0;
+	z-index: 100;
+	overflow: auto;
+}
+.popup-wrapper {
+	
+    left: 50%;
+    margin-left: -225px;
+	
+	
+	background: #f1e9cd;
+//	background-image: url(/img/rm/pp.png);
+//	background-position:  center top;
+	max-width: 450px;
+	text-align: center;
+	padding: 55px 84px 160px;
+	position: relative;
+	&__title {
+		
+		letter-spacing: 2px;
+		font-family: "BravoRG", sans-serif;
+		font-size: 36px;
+		color: #1d1d1d;
+		text-transform: uppercase;
+		margin-bottom: 7px;
+	}
+	&__subtitle {
+		font-size: 16px;
+		line-height: 20px;
+		color: #5b5b5b;
+		margin-bottom: 34px;
+	}
+	&__radio {
+		margin-bottom: 10px;
+	}
+	&__select {
+		text-align: left;
+		
+		font-family: "BravoRG", sans-serif;
+		font-size: 26px;
+		color: #1d1d1d;
+		text-transform: uppercase;
+		padding-left: 40px;
+		letter-spacing: 2px;
+		margin-bottom: 35px;
+		input, label {
+			vertical-align: middle;
+		}
+	}
+	&__btn {
+		display: block;
+		margin-top: 68px;
+	}
+	&__img-0 {
+		position: absolute;
+		bottom: -140px;
+		left: 50%;
+		margin-left: -475/2px;
+	}
+	&__img-1 {
+		position: absolute;
+		left: -76px;
+		top: 300px;
+	}
+	&__img-2 {
+		position: absolute;
+		right: -96px;
+	}
+	input[type="radio"] {
+		-webkit-appearance: none;
+		width: 18px;
+		height: 18px;
+		border: 1px solid #c1c1c1;
+		padding: 4px;
+		vertical-align: middle;
+		margin-bottom: 2px;
+		outline: 0;
+		margin-right: 11px;
+		&:checked {
+			border-color: rgba(201, 8, 52, 0.5);
+			&:before {
+				content: '';
+				display: block;
+				width: 8px;
+				height: 8px;
+				background: #cb123c;
+				box-shadow: 0px 4px 10px rgba(201, 8, 52, 0.5)
+			}
+		}
+	}
+}
+.popup-angle {
+	position: absolute;
+	width: 126px;
+	height: 126px;
+	top: 0;
+	left: 0;
+	img {
+		position: absolute;
+		left: 22px;
+		top: 22px;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		border-width: 126px/2;
+		border-style: solid;
+		border-top-color: #c90834;
+		border-left-color: #c90834;
+		border-right-color: transparent;
+		border-bottom-color: transparent;
 	}
 }
 
@@ -775,13 +944,66 @@ body {
 .section-reservation {
 	background: url(../img/bg-section-reservation.png) no-repeat;
 //	background-size-x: 1128px;
-	min-height: 500px;
+	min-height: 700px;
 	
     margin-top: -47px;
     padding-top: 30px;
 	padding-bottom: 100px;
 	&__title {
 		text-align: center;
+	}
+}
+.price {
+	font-size: 36px;
+	font-family: "BravoRG", sans-serif;
+	line-height: 50px;
+	text-transform: uppercase;
+	&__item-title {
+		text-align: right;
+		width: 30%;
+		display: inline-block;
+		margin-right: 60px;
+	}
+	&__note {
+		font-size: 26px;
+		color: #1c1c1c;
+		margin-bottom: 40px;
+		letter-spacing: 2px;
+	}
+	&__list {
+		position: relative;
+		max-width: 800px;
+		left: 0;
+		right: 0;
+		margin: 0 auto 40px;
+		padding: 40px 0;
+		letter-spacing: 3px;
+		&:before {
+			content: '';
+			position: absolute;
+			display: block;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background: url(../img/price-border.png) center no-repeat;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			display: block;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background: url(../img/price-border.png) center no-repeat;
+		}
+	}
+	&__btn {
+		left: 0;
+		right: 0;
+		margin: auto;
+		display: block;
 	}
 }
 .reservation {
@@ -1318,3 +1540,4 @@ body {
 		}
 	}
 }
+

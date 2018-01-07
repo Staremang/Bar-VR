@@ -138,6 +138,7 @@
 	<div class="section-reservation" id="reservation">
 		<div class="container">
 			<h1 class="section-reservation__title section-title">Купите билет в новую реальность</h1>
+<!--
 			<div class="reservation">
 				<div class="reservation__options">
 					<div class="reservation__opt">
@@ -241,6 +242,26 @@
 					</div>
 					<button class="btn btn_large btn_white">Забронировать</button>
 				</div>
+			</div>
+-->
+			<div class="price">
+				<div class="price__list">
+					<div class="price__item">
+						<span class="price__item-title">Промо-игра</span>
+						<span class="price__item-value"><span class="red">бесплатно</span> (5 мин)</span>
+					</div>
+					<div class="price__item">
+						<span class="price__item-title">Тестовая игра</span>
+						<span class="price__item-value"><span class="red">300 руб.</span> (10 мин)</span>
+					</div>
+					<div class="price__item">
+						<span class="price__item-title">1 час игры</span>
+						<span class="price__item-value"><span class="red">600 руб.</span> (буд) / <span class="red">700 руб.</span> (вых)</span>
+					</div>
+				</div>
+				<div class="price__note">*необходимо сделать публикацию в соц. сети вконтакте и instagram с хэштегом <span class="red">#barvrвподземке</span></div>
+				
+				<button class="price__btn btn btn_large btn_white">Забронировать</button>
 			</div>
 		</div>
 	</div>
@@ -993,10 +1014,51 @@
 			</div>
 		</div>
 	</footer>
+	
+	
+	<div class="popup">
+		<div class="popup-wrapper">
+			<div class="popup-angle">
+				<img src="img/i-ticket-popup.png" alt="">
+			</div>
+			<div class="popup-wrapper__title">Запись на игру</div>
+			<div class="popup-wrapper__subtitle">Оставьте заявку и наш менеджер свяжется с Bами в течение 5-и минут</div>
+			<div class="popup-wrapper__select">
+				<div class="popup-wrapper__radio">
+					<input type="radio" id="promo-game" name="number">
+					<label for="promo-game">Промо-игра</label>
+				</div>
+				<div class="popup-wrapper__radio">
+					<input type="radio" id="test-game" name="number">
+					<label for="test-game">тестовая игра</label>
+				</div>
+				<div class="popup-wrapper__radio">
+					<input type="radio" id="one-hour-of-play" name="number">
+					<label for="one-hour-of-play">1 час игры</label>
+				</div>
+			</div>
+			<div class="input-group">
+				<input type="text" class="input" placeholder="Введите ваше имя">
+			</div>
+			<div class="input-group">
+				<input type="text" id="date" data-lang="ru" data-format="d.m.Y" class="input" placeholder="Дата">
+				<input type="text" id="time" class="input" placeholder="Время">
+			</div>
+			<div class="input-group">
+				<input type="tel" class="input" placeholder="Введите ваш телефон">
+			</div>
+			<button class="popup-wrapper__btn btn btn_large btn_white">Забронировать</button>
+			<img src="img/popup-img-0.png" alt="" class="popup-wrapper__img-0">
+			<img src="img/popup-img-1.png" alt="" class="popup-wrapper__img-1">
+			<img src="img/popup-img-2.png" alt="" class="popup-wrapper__img-2">
+		</div>
+	</div>
 	<script src="js/jquery-3.2.0.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/simplebar.min.js"></script>
+	<script src="js/datedropper.min.js"></script>
+	<script src="js/timedropper.min.js"></script>
 	<script src="js/main.min.js"></script>
 </body>
 </html>
