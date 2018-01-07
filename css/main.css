@@ -3987,7 +3987,7 @@ body {
   color: #1d1d1d;
 }
 .popup {
-  position: absolute;
+  position: fixed;
   background: rgba(36, 36, 36, 0.96);
   top: 0;
   left: 0;
@@ -3996,6 +3996,7 @@ body {
   padding: 100px 0;
   z-index: 100;
   overflow: auto;
+  display: none;
 }
 .popup-wrapper {
   left: 50%;
@@ -4788,16 +4789,44 @@ body {
   text-align: center;
 }
 .price {
-  font-size: 36px;
   font-family: "BravoRG", sans-serif;
-  line-height: 50px;
   text-transform: uppercase;
+  font-size: 22px;
+}
+@media (min-width: 768px) {
+  .price {
+    font-size: 36px;
+    line-height: 50px;
+  }
 }
 .price__item-title {
+  text-align: left;
+  display: block;
+}
+@media (min-width: 450px) {
+  .price__item-title {
+    text-align: right;
+    width: 30%;
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .price__item-title {
+    margin-right: 60px;
+  }
+}
+.price__item-value {
   text-align: right;
-  width: 30%;
-  display: inline-block;
-  margin-right: 60px;
+  display: block;
+  margin-bottom: 10px;
+}
+@media (min-width: 450px) {
+  .price__item-value {
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 0;
+  }
 }
 .price__note {
   font-size: 26px;
@@ -4811,8 +4840,13 @@ body {
   left: 0;
   right: 0;
   margin: 0 auto 40px;
-  padding: 40px 0;
+  padding: 20px 0;
   letter-spacing: 3px;
+}
+@media (min-width: 768px) {
+  .price__list {
+    padding: 40px 0;
+  }
 }
 .price__list:before {
   content: '';
@@ -5405,7 +5439,7 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: left;
-  padding: 0 10px;
+  padding: 0 30px;
   margin-top: 10px;
   margin-bottom: 10px;
 }

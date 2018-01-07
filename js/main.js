@@ -160,6 +160,8 @@ if (typeof(jQuery) !== "undefined") {
 		});
 		
 		var popup = false;
+		$('.popup').hide();
+		
 		$('[data-popup]').click(function (e) {
 			e.preventDefault();
 			if (popup) {
