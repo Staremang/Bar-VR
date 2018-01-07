@@ -1,4 +1,4 @@
-
+var url = 'mail.php';
 /**
  * anchor.js - jQuery Plugin
  * Jump to a specific section smoothly
@@ -114,8 +114,8 @@
 
 if (typeof(jQuery) !== "undefined") {
 	$(document).ready(function () {
-		$('#date').dateDropper();
-		$('#time').timeDropper({
+		$('#registration-date').dateDropper();
+		$('#registration-time').timeDropper({
 			format: 'HH:00',
 			setCurrentTime: false
 		});
@@ -185,6 +185,46 @@ if (typeof(jQuery) !== "undefined") {
 				$('body').css('overflow', 'auto');
 				popup = false;
 			}
+		})
+		
+		$('form').on('submit', function (e) {
+			var popupBlock = $(e.target).parent();
+			e.preventDefault();
+			if (popupBlock.attr('id') == 'callme') {
+				if ($('#callme-name').val() == '' || $('#callme-tel').val() == '' || $('#callme-email').val() == '') {
+					console.log('Не все поля заполнены');
+					return;
+				}
+			} else if (popupBlock.attr('id') == 'registration'){
+				if ($('#promo-game').prop("checked") == false && $('#test-game').prop("checked") == false && $('#one-hour-of-play').prop("checked") == false) {
+					console.log('Не все поля заполнены');
+					return;
+				}
+				
+				if ($('#registration-name').val() == '' || $('#registration-tel').val() == '' || $('#registration-date').val() == '' || $('#registration-time').val() == '') {
+					console.log('Не все поля заполнены');
+					return;
+				}
+			}
+			var data = $(this).serialize();
+			
+			$.ajax({
+				type: "POST",
+				url: url,
+				data: data,
+				beforeSend: function () {
+					popupBlock.find('.popup-wrapper__btn').html('Отправка...');
+				},
+				success: function(){
+					
+					popupBlock.fadeOut();
+					popupBlock.removeClass('active');
+					$('body').css('overflow', 'auto');
+					popup = false;
+					popupBlock.find('.popup-wrapper__btn').html('Отправлено');
+//					alert('Load was performed.');
+				}
+			});
 		})
 		
 		if (typeof $.fn.owlCarousel  !== 'undefined') {

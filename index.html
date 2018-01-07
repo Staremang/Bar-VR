@@ -1017,7 +1017,7 @@
 	
 	
 	<div class="popup" id="registration">
-		<div class="popup-wrapper">
+		<form class="popup-wrapper">
 			<div class="popup-angle">
 				<img src="img/i-ticket-popup.png" alt="">
 			</div>
@@ -1025,55 +1025,55 @@
 			<div class="popup-wrapper__subtitle">Оставьте заявку и наш менеджер свяжется с Bами в течение 5-и минут</div>
 			<div class="popup-wrapper__select">
 				<div class="popup-wrapper__radio">
-					<input type="radio" id="promo-game" name="number">
+					<input type="radio" id="promo-game" name="game-type">
 					<label for="promo-game">Промо-игра</label>
 				</div>
 				<div class="popup-wrapper__radio">
-					<input type="radio" id="test-game" name="number">
+					<input type="radio" id="test-game" name="game-type">
 					<label for="test-game">тестовая игра</label>
 				</div>
 				<div class="popup-wrapper__radio">
-					<input type="radio" id="one-hour-of-play" name="number">
+					<input type="radio" id="one-hour-of-play" name="game-type">
 					<label for="one-hour-of-play">1 час игры</label>
 				</div>
 			</div>
 			<div class="input-group">
-				<input type="text" class="input" placeholder="Введите ваше имя">
+				<input type="text" name="name" id="registration-name" class="input" placeholder="Введите ваше имя" required>
 			</div>
 			<div class="input-group">
-				<input type="text" id="date" data-lang="ru" data-format="d.m.Y" class="input" placeholder="Дата">
-				<input type="text" id="time" class="input" placeholder="Время">
+				<input type="text" name="date" id="registration-date" data-lang="ru" data-format="d.m.Y" class="input" placeholder="Дата" required>
+				<input type="text" name="time" id="registration-time" class="input" placeholder="Время" required>
 			</div>
 			<div class="input-group">
-				<input type="tel" class="input" placeholder="Введите ваш телефон">
+				<input type="tel" name="tel" id="registration-tel" class="input" placeholder="Введите ваш телефон" required>
 			</div>
-			<button class="popup-wrapper__btn btn btn_large btn_white">Забронировать</button>
+			<button type="submit" id="registration-submit" class="popup-wrapper__btn btn btn_large btn_white">Забронировать</button>
 			<img src="img/popup-img-0.png" alt="" class="popup-wrapper__img-0">
 			<img src="img/popup-img-1.png" alt="" class="popup-wrapper__img-1">
 			<img src="img/popup-img-2.png" alt="" class="popup-wrapper__img-2">
-		</div>
+		</form>
 	</div>
 	<div class="popup" id="callme">
-		<div class="popup-wrapper">
+		<form class="popup-wrapper">
 			<div class="popup-angle">
 				<img src="img/phone-popup.png" alt="">
 			</div>
 			<div class="popup-wrapper__title">закажите звонок</div>
 			<div class="popup-wrapper__subtitle">И наш менеджер свяжется с Bами в течение 5-и минут</div>
 			<div class="input-group">
-				<input type="text" class="input" placeholder="Введите ваше имя">
+				<input type="text" class="input" name="name" id="callme-name" placeholder="Введите ваше имя" required>
 			</div>
 			<div class="input-group">
-				<input type="tel" class="input" placeholder="Введите ваш телефон">
+				<input type="tel" class="input" name="tel" id="callme-tel" placeholder="Введите ваш телефон" required>
 			</div>
 			<div class="input-group">
-				<input type="email" class="input" placeholder="Введите ваш E-mail">
+				<input type="email" class="input" name="email" id="callme-email" placeholder="Введите ваш E-mail" required>
 			</div>
-			<button class="popup-wrapper__btn btn btn_large btn_white">Заказать звонок</button>
+			<button type="submit" class="popup-wrapper__btn btn btn_large btn_white" id="callme-submit">Заказать звонок</button>
 			<img src="img/popup-img-0.png" alt="" class="popup-wrapper__img-0">
 			<img src="img/popup-img-1.png" alt="" class="popup-wrapper__img-1">
 			<img src="img/popup-img-2.png" alt="" class="popup-wrapper__img-2">
-		</div>
+		</form>
 	</div>
 	<script src="js/jquery-3.2.0.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
