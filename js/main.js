@@ -159,6 +159,32 @@ if (typeof(jQuery) !== "undefined") {
 			transitionDuration : 1000
 		});
 		
+		var popup = false;
+		$('[data-popup]').click(function (e) {
+			e.preventDefault();
+			if (popup) {
+				$('body').css('overflow', 'auto');
+				$('.popup.active').fadeOut();
+				$('.popup.active').removeClass('active');
+				popup = false;
+			} else {
+				$('body').css('overflow', 'hidden');
+				$('#' + $(this).attr('data-popup')).addClass('active');
+				$('#' + $(this).attr('data-popup')).fadeIn();
+				popup = true;
+			}
+		})
+		$('.popup').click(function(e) {
+			if ($(e.target).hasClass('popup')) {
+				
+//				e.preventDefault();
+				$(this).fadeOut();
+				$(this).removeClass('active');
+				$('body').css('overflow', 'auto');
+				popup = false;
+			}
+		})
+		
 		if (typeof $.fn.owlCarousel  !== 'undefined') {
 
 			$('.section-reviews-slider').addClass('owl-carousel owl-carousel_no-dots owl-theme');
