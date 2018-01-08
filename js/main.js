@@ -188,8 +188,10 @@ if (typeof(jQuery) !== "undefined") {
 		})
 		
 		$('form').on('submit', function (e) {
-			var popupBlock = $(e.target).parent();
 			e.preventDefault();
+			
+			
+			var popupBlock = $(e.target).parent();
 			if (popupBlock.attr('id') == 'callme') {
 				if ($('#callme-name').val() == '' || $('#callme-tel').val() == '' || $('#callme-email').val() == '') {
 					console.log('Не все поля заполнены');
@@ -206,6 +208,7 @@ if (typeof(jQuery) !== "undefined") {
 					return;
 				}
 			}
+			
 			var data = $(this).serialize();
 			
 			$.ajax({
@@ -215,7 +218,10 @@ if (typeof(jQuery) !== "undefined") {
 				beforeSend: function () {
 					popupBlock.find('.popup-wrapper__btn').html('Отправка...');
 				},
-				success: function(){
+				error: function () {
+					popupBlock.find('.popup-wrapper__btn').html('Ошибка');
+				},
+				success: function () {
 					
 					popupBlock.fadeOut();
 					popupBlock.removeClass('active');
