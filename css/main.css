@@ -4830,6 +4830,7 @@ body {
   text-align: right;
   display: block;
   margin-bottom: 10px;
+  position: relative;
 }
 @media (min-width: 450px) {
   .price__item-value {
@@ -4837,6 +4838,16 @@ body {
     display: inline-block;
     margin-bottom: 0;
   }
+}
+.price__item-value_note:before {
+  content: '*';
+  position: absolute;
+  left: -13px;
+  color: #c90834;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .price__note {
   font-size: 26px;

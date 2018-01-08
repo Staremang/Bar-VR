@@ -990,10 +990,20 @@ body {
 		text-align: right;
 		display: block;
 		margin-bottom: 10px;
+		position: relative;
 		@media (min-width: 450px) {
 			text-align: left;
 			display: inline-block;
 			margin-bottom: 0;
+		}
+		&_note {
+			&:before {
+				content: '*';
+				position: absolute;
+				left: -13px;
+				color: #c90834;
+				user-select: none;
+			}
 		}
 	}
 	&__note {
