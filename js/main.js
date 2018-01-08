@@ -114,6 +114,11 @@ var url = 'mail.php';
 
 if (typeof(jQuery) !== "undefined") {
 	$(document).ready(function () {
+		if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+			$('.section-hero__video').hide();
+			$('.section-hero__video-overlay').hide();
+		}
+		
 		$('#registration-date').dateDropper();
 		$('#registration-time').timeDropper({
 			format: 'HH:00',

@@ -369,6 +369,13 @@ body {
 			}
 		}
 	}
+	&__text {
+		display: none;
+		
+		@media (min-width: @width-md) {
+			display: inline-block;
+		}
+	}
 	&:hover {
 		color: white;
 		.nav-menu-btn__icon {
@@ -411,11 +418,13 @@ body {
 	z-index: 10;
 	cursor: pointer;
 	&__order {
+		display: none;
 		@media (min-width: @width-md) {
+			margin-right: 8px;
 			opacity: 0;
 			transition: all .3s;
+			display: inline-block;
 		}
-		margin-right: 8px;
 	}
 	&__icon {
 		background: url(../img/i-phone-w.png) no-repeat;
@@ -428,10 +437,15 @@ body {
 	}
 	&__number {
 		
-		transition: color .3s;
-		span {
-			color: #b9b9b9;
+		
+		display: none;
+		@media (min-width: @width-md) {
+			display: inline-block;
 			transition: color .3s;
+			span {
+				color: #b9b9b9;
+				transition: color .3s;
+			}
 		}
 	}
 	&:hover {
@@ -664,11 +678,20 @@ body {
 	}
 	&__address {
 		position: absolute;
-		top: 60px;
+		
+		top: 20px;
+		@media (min-width: @width-md) {
+			top: 60px;
+		}
 	}
 	&__tel-btn {
-		top: 90px;
 		position: absolute;
+		top: 20px;
+		right: 20px;
+		@media (min-width: @width-md) {
+			right: auto;
+			top: 90px;
+		}
 	}
 	&__social-list {
 		display: none;
