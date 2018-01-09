@@ -8,8 +8,8 @@
 	<meta name="theme-color" content="#000000">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	
-    <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
 <!--
@@ -1016,7 +1016,8 @@
 	</footer>
 	
 	
-	<div class="popup" id="registration">
+	<div class="popup" id="registration"> 
+		<button class="popup__btn-close fancybox-button fancybox-button--close" title="Close (Esc)"></button>
 		<form class="popup-wrapper">
 			<div class="popup-angle">
 				<img src="img/i-ticket-popup.png" alt="">
@@ -1038,14 +1039,27 @@
 				</div>
 			</div>
 			<div class="input-group">
-				<input type="text" autocomplete="name" name="name" id="registration-name" class="input" placeholder="Введите ваше имя" required>
+				<div class="input-field">
+					<label for="registration-name">Введите ваше имя</label>
+					<input data-custom-placeholder type="text" autocomplete="name" name="name" id="registration-name" class="input" required>
+				</div>
+			</div>
+			<div class="input-group no-gutters">
+			
+				<div class="input-field col-md-6">
+					<label for="registration-date">Дата</label>
+					<input type="text" name="date" id="registration-date" required>
+				</div>
+				<div class="input-field col-md-6">
+					<label for="registration-time">Время</label>
+					<input data-custom-placeholder type="text" name="time" id="registration-time" required>
+				</div>
 			</div>
 			<div class="input-group">
-				<input type="text" name="date" id="registration-date" data-lang="ru" data-format="d.m.Y" class="input" placeholder="Дата" required>
-				<input type="text" name="time" id="registration-time" class="input" placeholder="Время" required>
-			</div>
-			<div class="input-group">
-				<input type="tel" autocomplete="tel" name="tel" id="registration-tel" class="input" placeholder="Введите ваш телефон" required>
+				<div class="input-field">
+					<label for="registration-tel">Введите ваш телефон</label>
+					<input data-custom-placeholder type="tel" autocomplete="tel" class="input" name="tel" id="registration-tel" required>
+				</div>
 			</div>
 			<button type="submit" id="registration-submit" class="popup-wrapper__btn btn btn_large btn_white">Забронировать</button>
 			<img src="img/popup-img-0.png" alt="" class="popup-wrapper__img-0">
@@ -1054,6 +1068,7 @@
 		</form>
 	</div>
 	<div class="popup" id="callme">
+		<button class="popup__btn-close fancybox-button fancybox-button--close" title="Close (Esc)"></button>
 		<form class="popup-wrapper">
 			<div class="popup-angle">
 				<img src="img/phone-popup.png" alt="">
@@ -1061,13 +1076,22 @@
 			<div class="popup-wrapper__title">закажите звонок</div>
 			<div class="popup-wrapper__subtitle">И наш менеджер свяжется с Bами в течение 5-и минут</div>
 			<div class="input-group">
-				<input type="text" autocomplete="name" class="input" name="name" id="callme-name" placeholder="Введите ваше имя" required>
+				<div class="input-field">
+					<label for="callme-name">Введите ваше имя</label>
+					<input data-custom-placeholder type="text" autocomplete="name" class="input" name="name" id="callme-name" required>
+				</div>
 			</div>
 			<div class="input-group">
-				<input type="tel" autocomplete="tel" class="input" name="tel" id="callme-tel" placeholder="Введите ваш телефон" required>
+				<div class="input-field">
+					<label for="callme-tel">Введите ваш телефон</label>
+					<input data-custom-placeholder type="tel" autocomplete="tel" class="input" name="tel" id="callme-tel" required>
+				</div>
 			</div>
 			<div class="input-group">
-				<input type="email" autocomplete="email" class="input" name="email" id="callme-email" placeholder="Введите ваш E-mail" required>
+				<div class="input-field">
+					<label for="callme-email">Введите ваш E-mail</label>
+					<input data-custom-placeholder type="email" autocomplete="email" class="input" name="email" id="callme-email" required>
+				</div>
 			</div>
 			<button type="submit" class="popup-wrapper__btn btn btn_large btn_white" id="callme-submit">Заказать звонок</button>
 			<img src="img/popup-img-0.png" alt="" class="popup-wrapper__img-0">
@@ -1079,7 +1103,8 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/simplebar.min.js"></script>
-	<script src="js/datedropper.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	
 	<script src="js/timedropper.min.js"></script>
 	<script src="js/main.min.js"></script>
 </body>
