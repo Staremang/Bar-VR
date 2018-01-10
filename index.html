@@ -1019,6 +1019,7 @@
 	<div class="popup" id="registration"> 
 		<button class="popup__btn-close fancybox-button fancybox-button--close" title="Close (Esc)"></button>
 		<form class="popup-wrapper">
+			<input type="hidden" name="type" value="registration">
 			<div class="popup-angle">
 				<img src="img/i-ticket-popup.png" alt="">
 			</div>
@@ -1026,15 +1027,15 @@
 			<div class="popup-wrapper__subtitle">Оставьте заявку и наш менеджер свяжется с Bами в течение 5-и минут</div>
 			<div class="popup-wrapper__select">
 				<div class="popup-wrapper__radio">
-					<input type="radio" id="promo-game" name="game-type" required>
+					<input type="radio" id="promo-game" name="game-type" value="Промо-игра" required>
 					<label for="promo-game">Промо-игра</label>
 				</div>
 				<div class="popup-wrapper__radio">
-					<input type="radio" id="test-game" name="game-type" required>
+					<input type="radio" id="test-game" name="game-type" value="Тестовая игра" required>
 					<label for="test-game">тестовая игра</label>
 				</div>
 				<div class="popup-wrapper__radio">
-					<input type="radio" id="one-hour-of-play" name="game-type" required>
+					<input type="radio" id="one-hour-of-play" name="game-type" value="1 час игры" required>
 					<label for="one-hour-of-play">1 час игры</label>
 				</div>
 			</div>
@@ -1070,6 +1071,7 @@
 	<div class="popup" id="callme">
 		<button class="popup__btn-close fancybox-button fancybox-button--close" title="Close (Esc)"></button>
 		<form class="popup-wrapper">
+			<input type="hidden" name="type" value="callme">
 			<div class="popup-angle">
 				<img src="img/phone-popup.png" alt="">
 			</div>
