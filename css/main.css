@@ -4360,10 +4360,10 @@ body {
   right: -1px;
   height: 41px;
   z-index: 1;
-  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(70%, white));
-  background-image: -webkit-linear-gradient(left, transparent, white 70%);
-  background-image: -o-linear-gradient(left, transparent, white 70%);
-  background-image: linear-gradient(90deg, transparent, white 70%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(70%, #ffffff));
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #ffffff 70%);
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), #ffffff 70%);
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0), #ffffff 70%);
   width: 50px;
   font-size: 20px;
   padding: 10px 0;
