@@ -7,7 +7,7 @@ if( isset($_POST['type']) ) {
 
     if ($_POST['type'] == "registration") {
 
-        if ((isset($_POST['game-type']) && $_POST['game-type'] != "") && (isset($_POST['name']) && $_POST['name'] != "") && (isset($_POST['date']) && $_POST['date'] != "") && (isset($_POST['time']) && $_POST['time'] != "") && (isset($_POST['tel']) && $_POST['tel'] != "")) {
+        if ((isset($_POST['game-type']) && $_POST['game-type'] != "") && (isset($_POST['name']) && $_POST['name'] != "") && (isset($_POST['date']) && $_POST['date'] != "") && (isset($_POST['tel']) && $_POST['tel'] != "")) {
 
             $subject = 'Новое бронирование';
             $message = '
@@ -19,7 +19,6 @@ if( isset($_POST['type']) ) {
                         <p>Вид игры: '.trim(urldecode(htmlspecialchars($_POST['game-type']))).'</p>
                         <p>Имя: '.trim(urldecode(htmlspecialchars($_POST['name']))).'</p>
                         <p>Дата: '.trim(urldecode(htmlspecialchars($_POST['date']))).'</p>
-                        <p>Время: '.trim(urldecode(htmlspecialchars($_POST['time']))).'</p>
                         <p>Телефон: '.trim(urldecode(htmlspecialchars($_POST['tel']))).'</p>
                     </body>
                 </html>';

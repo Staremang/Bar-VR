@@ -50,17 +50,20 @@
 		
 		<div class="section-hero__address hero-address">Красный проспект (161)</div>
 		
-		<a href="#" data-popup="callme" class="section-hero__tel-btn hero-tel-link">
-			<span class="hero-tel-link__order">Заказать звонок</span>
-			<span class="hero-tel-link__icon"></span>
-			<span class="hero-tel-link__number"><span>+7 (999)</span> 499-29-99</span>
-		</a>
+		<div class="section-hero__tel-btn hero-tel-link">
+			<a href="#" data-popup="callme" class="hero-tel-link__order">Заказать звонок</a>
+			
+			<a href="tel:+7(999)499-29-99" class="hero-tel-link__number">
+				<span class="hero-tel-link__icon"></span>
+				<span class="hero-tel-link__tel"><span>+7 (999)</span> 499-29-99</span>
+			</a>
+		</div>
 		
 		<div class="section-hero__social-list hero-social-list">
-			<a href="#" class="hero-social-list__link hero-social-list__vk"></a>
-			<a href="#" class="hero-social-list__link hero-social-list__fb"></a>
-			<a href="#" class="hero-social-list__link hero-social-list__ig"></a>
-			<a href="#" class="hero-social-list__link hero-social-list__yt"></a>
+			<a href="#" target="_blank" class="hero-social-list__link hero-social-list__vk"></a>
+			<a href="#" target="_blank" class="hero-social-list__link hero-social-list__fb"></a>
+			<a href="#" target="_blank" class="hero-social-list__link hero-social-list__ig"></a>
+			<a href="#" target="_blank" class="hero-social-list__link hero-social-list__yt"></a>
 		</div>
 		
 		<div class="section-hero__page-nav page-nav"> 
@@ -990,7 +993,7 @@
 				</div>
 			</div>
 			<div class="section-reviews__btn-block">
-				<a href="#" class="btn btn_large btn_black">Смотреть отзывы на флампе</a>
+				<a href="#" target="_blank" class="btn btn_large btn_black">Смотреть отзывы на флампе</a>
 			</div>
 		</div>
 	</div>
@@ -1046,14 +1049,9 @@
 				</div>
 			</div>
 			<div class="input-group no-gutters">
-			
-				<div class="input-field col-md-6">
+				<div class="input-field">
 					<label for="registration-date">Дата</label>
 					<input type="text" name="date" id="registration-date" required>
-				</div>
-				<div class="input-field col-md-6">
-					<label for="registration-time">Время</label>
-					<input data-custom-placeholder type="text" name="time" id="registration-time" required>
 				</div>
 			</div>
 			<div class="input-group">
@@ -1101,6 +1099,7 @@
 			<img src="img/popup-img-2.png" alt="" class="popup-wrapper__img-2">
 		</form>
 	</div>
+	
 	<script src="js/jquery-3.2.0.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>

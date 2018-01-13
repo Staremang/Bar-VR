@@ -3285,17 +3285,32 @@ body {
   cursor: pointer;
 }
 .hero-tel-link__order {
+  text-decoration: none;
+  color: inherit;
   display: none;
 }
 @media (min-width: 768px) {
   .hero-tel-link__order {
     margin-right: 8px;
-    opacity: 0;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
     display: inline-block;
   }
+}
+.hero-tel-link__number {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.hero-tel-link__number:hover .hero-tel-link__icon {
+  background: url(../img/i-phone-r.png) no-repeat;
+}
+.hero-tel-link__number:hover .hero-tel-link__tel {
+  color: white;
+}
+.hero-tel-link__number:hover .hero-tel-link__tel span {
+  color: #c90834;
 }
 .hero-tel-link__icon {
   background: url(../img/i-phone-w.png) no-repeat;
@@ -3306,34 +3321,22 @@ body {
   margin-right: 5px;
   margin-bottom: 3px;
 }
-.hero-tel-link__number {
+.hero-tel-link__tel {
   display: none;
 }
 @media (min-width: 768px) {
-  .hero-tel-link__number {
+  .hero-tel-link__tel {
     display: inline-block;
     -webkit-transition: color .3s;
     -o-transition: color .3s;
     transition: color .3s;
   }
-  .hero-tel-link__number span {
+  .hero-tel-link__tel span {
     color: #b9b9b9;
     -webkit-transition: color .3s;
     -o-transition: color .3s;
     transition: color .3s;
   }
-}
-.hero-tel-link:hover .hero-tel-link__order {
-  opacity: 1;
-}
-.hero-tel-link:hover .hero-tel-link__icon {
-  background: url(../img/i-phone-r.png) no-repeat;
-}
-.hero-tel-link:hover .hero-tel-link__number {
-  color: white;
-}
-.hero-tel-link:hover .hero-tel-link__number span {
-  color: #c90834;
 }
 .hero-social-list {
   z-index: 10;

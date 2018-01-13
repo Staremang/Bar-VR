@@ -465,12 +465,31 @@ body {
 	z-index: 10;
 	cursor: pointer;
 	&__order {
+		text-decoration: none;
+		color: inherit;
 		display: none;
 		@media (min-width: @width-md) {
 			margin-right: 8px;
-			opacity: 0;
+//			opacity: 0;
 			transition: all .3s;
 			display: inline-block;
+		}
+	}
+	&__number {
+		
+		text-decoration: none;
+		color: inherit;
+		cursor: pointer;
+		&:hover {
+			.hero-tel-link__icon {
+				background: url(../img/i-phone-r.png) no-repeat;
+			}
+			.hero-tel-link__tel {
+				color: white;
+				span {
+					color: #c90834;
+				}
+			}
 		}
 	}
 	&__icon {
@@ -482,10 +501,9 @@ body {
 		margin-right: 5px;
 		margin-bottom: 3px;
 	}
-	&__number {
-		
-		
+	&__tel {
 		display: none;
+		
 		@media (min-width: @width-md) {
 			display: inline-block;
 			transition: color .3s;
@@ -495,20 +513,20 @@ body {
 			}
 		}
 	}
-	&:hover {
-		.hero-tel-link__order {
-			opacity: 1;
-		}
-		.hero-tel-link__icon {
-			background: url(../img/i-phone-r.png) no-repeat;
-		}
-		.hero-tel-link__number {
-			color: white;
-			span {
-				color: #c90834;
-			}
-		}
-	}
+//	&:hover {
+//		.hero-tel-link__order {
+//			opacity: 1;
+//		}
+//		.hero-tel-link__icon {
+//			background: url(../img/i-phone-r.png) no-repeat;
+//		}
+//		.hero-tel-link__number {
+//			color: white;
+//			span {
+//				color: #c90834;
+//			}
+//		}
+//	}
 }
 .hero-social-list {
 	z-index: 10;
